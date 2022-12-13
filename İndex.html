@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Geliştirme Grubu</title>
+    <link rel="icon" type="images/icon" href="favicon.ico">
+</head>
+
+<body>
+    <!-- BAŞLIK ETİKETLERİ -->
+
+    <h1>Hello World</h1>
+    <h2>Hello World</h2>
+    <h3>Hello World</h3>
+    <h4>Hello World</h4>
+    <h5>Hello World</h5>
+    <h6>Hello World</h6>
+    <h1 style="font-size: 60px">Hello World</h1>
+
+    <!-- PARAGRAF ETİKETLERİ -->
+
+    <!-- p ve pre arasındaki temel fark pre de yazdığınız metinlerin boşluklarına uygun şekilde çıktı vermesi. p de ise hepsini yan yana yazması(değişim yapılmadığı sürece) -->
+    <p>
+        Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit.
+
+        Aspernatur nihil dolorem nostrum tenetur placeat labore fugiat natus animi culpa,
+        error.
+    </p>
+
+    <pre>
+    Lorem ipsum dolor.
+    
+    Lorem ipsum dolor sit.
+    
+    Lorem ipsum dolor sit amet.
+    </pre>
+
+    <!-- STİLLER -->
+    <!-- 
+    background-color => Arka Plan Rengini Düzenler.
+    font-family => Yazı Tipini Değiştirir.
+    font-size => Metin Boyutunu Değiştirir.
+    text-align => Metnin Sitedeki Yerini Belirler.
+    color => Yazının Rengini Değiştirir.
+    -->
+    <p style="background-color: aqua">Lorem ipsum dolor sit amet.</p>
+    <p style="font-family: fantasy">Lorem ipsum dolor sit amet.</p>
+    <p style="font-size: 20px">Lorem ipsum dolor sit amet.</p>
+    <p style="text-align: center">Lorem ipsum dolor sit amet.</p>
+    <p style="color: darkviolet">Lorem ipsum dolor sit amet.</p>
+
+    <!-- BİÇİMLENDİRME ETİKETLERİ -->
+    <b>Yazının Kalın olmasını sağlar.</b><br>
+    <strong>Önemli metin .</strong><br>
+    <i>İtalic metin.</i><br>
+    <em>Vurgulanan metin.</em><br>
+    <mark>İşaretli metin.</mark><br>
+    <small>Küçük metin.</small><br>
+    <del>Metnin üzerini çizme.</del><br>
+    <ins>Metinin altını çizme.</ins><br>
+    <p>Merhaba<sub>Alt simge metni</sub></p>
+    <p>Merhaba<sup>Üst simge metni</sup></p>
+
+    <!-- ALINTI VE ALINTI ELEMANLARI -->
+    <!--
+    <blcokquote></blockquote> => Farklı Kaynaktan Alınan Bölümün Tamamını Tanımlar.
+    <q></q> => Kısa Alıntı Cümleleri İçin Kullanılır.
+    <abbr></abbr> => Kısaltmalar İçin Kullanılır. Abbr Etiketinin İçerisindeki 'title' Etiketi, Mouse İle Kısaltmanın Üzerine Geldiğinizde Açıklama Metni Gösterir.
+    <address></address> => Bir Belgenin Veya Makalenin Yazarının/Sahibinin İletişim Bilgilerini Tanımlamak İçin Kullanılır.
+    <cite></cite> => Metin İçerisinde Herhangi Bir Kitabın Veya Makalenin Başlığını Tanımlamakta Kullanılır.
+    <bdo></bdo> => Metnin Yönünü Değiştirmek İçin Kullanılır. (Sağdan Sola- Soldan Sağa)
+    -->
+    <p>Here is a quote from WWF's website:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+    </blockquote>
+    <p>Fırat Üniversitesi<q>Yazılım Mühendisliği</q>Bölümü</p>
+    <p>The <abbr title="Fırat Üniversitesi">FÜ</abbr> 1975 yılında kuruldu.</p>
+    <address>
+        Written by John Doe.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address>
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+    <bdo dir="rtl">This text will be written from right to left</bdo><br>
+
+    <!-- RENKLER -->
+    <a href="https://www.w3schools.com/colors/colors_picker.asp" style="text-decoration: none">Renk Dökümanına Buradan Ulaşabilirsiniz</a><br>
+
+    <!-- BAĞLANTILAR - KÖRPÜLER -->
+    <!--
+    <a></a> => Link Tanımlamak İçin Kullanılır.
+    
+    'target' Bağlantılı Belgenin Nerede Açılacağını Belirtir.
+    '_self' Varsayılandır. Belgeyi Tıklandığı Pencerede/Sekmede Açar.
+    '_blank' Belgeyi Yeni Bir Pencerede Veya Sekmede Açar.
+    '_parent' Belgeyi Üst Çerçevede Açar.
+    '-top' Belgeyi Pencerenin Tam Ortasında Açar.
+    
+    <img> => Genellikle Bilgisayar da Kayıtlı Olan Resim,Video,GIF Gibi Dosyaları Açar.
+    
+    'mailto:info@gmail.com' => Bu Link İle Doğrudan Bilgisayarınızda Varsayılan Olarak Tanımlanmış Mail Programına Yönlendiriliyorsunuz Ve Mail Sahibe Bir Mail Oluşturuyorsunuz.
+    
+    Not: Ayrıca Linkler Kısmında Sadece İnternet Adresine Yönlendirme Yapılmıyor. Bilgisayarınızdaki Dosyaların Saklandığı Yerin Adresini De Girerseniz O Dosyaları da Açabilirsiniz.
+    -->
+    <a href="https://www.google.com.tr/">Google</a><br>
+    <img src="Resim Linki" alt="Resmin İsmi" style="Boyutları(width,height gibi)"><br>
+    <a href="mailto:yusufaytas642@gmail.com">Send E-Mail</a><br>
+
+    <!-- TABLOLAR -->
+    <!--
+    'td' => Tabo Verileri Anlamına Gelir.
+    'tr' => Tablo Satırı Anlamına Gelir.
+    'th' => Tablo Başlığı Anlamına Gelir.
+    'border' => Kenar Kalınlığını İfade Eder.
+    'width' ve 'height' => Yine Boyut Düzenlemesi Yapıyor.
+    'text-align:....' => Yazıların Tablo İçerisindeki Yerini Belirtir.
+    'colspan' ve 'rowspan' => Tablo Satır ve Sütunları Birleştirmek İçin Kullanılır.
+    'caption' => Tabloya Resim Yazısı Eklemek İçin Kullanılır.
+    'visibility: collapse' => Sütunları Gizlemek İçin Kullanılır.
+    
+    Not: Tablolar İle İlgili Çok Farklı Durumlar Yapabiliriz. Fakat Bunun İçin CSS Bilmemiz Gerekiyor.
+    -->
+
+    <table border="5">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+    </table><br>
+
+    <table border="0">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+    </table><br>
+
+    <table border="2">
+        <tr style="text-align: center">
+            <th style="width: 40% height=" 100px"">Company</th>
+            <th style="width: 40%">Contact</th>
+            <th style="width: 50%">Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+    </table>
+
+    <!-- LİSTELER -->
+    <!-- 
+    'ul' => Sırasız, (Madde İşaretli) Bir Liste Tanımlar.
+    'li' => Her Liste Ögesi Bu Etiketle Başlar.
+    'ol' => Sıralı Liste Tiplerinde Kullanılır.
+    'dl' => Açıklama Listesini Tanımlar.
+    'dt' => Terimi (Adı) Tanımlar.
+    'dd' => Her Terimi Açıklar.
+    
+    Sırasız Listeler İçin:
+    'list-style-type' => Bu Özellik Listenin Stilini Tanımlamak İçin Kullanılır.
+    *disc => Disk
+    *circle => Daire
+    *square => Kare
+    *none => Yok
+    
+    Sıralı Listeler İçin:
+    'list-style-type' => Bu Özellik Sıralı Listelerin Stillerini Değiştirmek İçin Kullanılır.
+    *type="1" => Sayılar
+    *type="A" => Büyük Harfler
+    *type="a" => Küçük Harfler
+    *type="I" => Büyük Roma Rakamları
+    *type="İ" => Küçük Roma Rakamları
+    
+    Not-1: Varsayılan olarak, sıralı bir liste 1'den saymaya başlar. Belirli bir sayıdan itibaren saymaya başlamak istiyorsanız 'start' özelliğini kullanabilirsiniz:
+    
+    Not-2: Bir Liste Ögesi (<li>) Yeni Bir Liste Ve Resimler Ve Bağlantılar Gibi Diğer HTML Öğelerini İçerebilir.
+    
+    Not-3: Listelerde Çok Farklı İşlemler Yapılabilir Fakat Bunun İçin CSS Bilgisi Gerekli.
+    -->
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+
+    <ol type="1">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <ol type="A">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <ol type="a">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <ol type="I">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <ol type="i">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <ol start="50">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+
+
+    <!-- FORMLAR -->
+
+    <!--
+    HTML '<form>' öğesi, kullanıcı girişi için bir HTML formu oluşturmak için kullanılır.
+    <form>, metin alanları, onay kutuları, radyo düğmeleri, gönderme düğmeleri vb. gibi farklı giriş öğeleri türleri için bir kapsayıcıdır.
+
+    HTML '<input>' öğesi, en çok kullanılan form öğesidir.
+    <input> özniteliğe bağlı olarak birçok şekilde görüntülenebilir
+    
+    <input type="text"> => Tek satırlık metin girişi görüntüler.
+    <input type="raido"> => Bir radyo düğmesi görüntüler(Birçok seçenekten istediğini seçmek için)
+    <input type="checkbox"> => Bir onay kutusu görüntüler.
+    <input type="submit"> => Bir gönder düğmesi görüntüler.
+    <input type="button"> => Tıklanabilir bir düğme görüntüler.
+    -->
+
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+    </form><br>
+
+    <p>Choose your favorite Web language:</p>
+
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    </form><br>
+
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label>
+    </form><br>
+
+    <!-- Form Nitelikleri -->
+
+    <!--
+    Öznitelik 'action', form gönderildiğinde gerçekleştirilecek eylemi tanımlar.
+    Genellikle, kullanıcı gönder düğmesini tıkladığında form verileri sunucudaki bir dosyaya gönderilir.
+    
+    Öznitelik target, formu gönderdikten sonra alınan yanıtın nerede görüntüleneceğini belirtir.
+    Öznitelik targetaşağıdaki değerlerden birine sahip olabilir:
+    
+    '_blank' => Yanıt yeni bir pencerede veya sekmede görüntülenir.
+    '_self'(Varsayılan) => Yanıt geçerli pencerede görüntülenir.
+    '_parent' => Yanıt üst çerçevede görüntülenir.
+    '_top' => Yanıt, pencerenin tüm gövdesinde görüntülenir.
+    
+    
+    Yöntem Özniteliği;
+    Öznitelik 'method', form verilerini gönderirken kullanılacak HTTP yöntemini belirtir.
+    method="get"Form verileri, URL değişkenleri ( ile ) veya HTTP işlem sonrası ( ile method="post") olarak gönderilebilir .
+    Form verilerini gönderirken varsayılan HTTP yöntemi GET'tir. 
+    
+    GET ile ilgili notlar:
+    *Ad/değer çiftlerinde form verilerini URL'ye ekler
+    *ASLA hassas verileri göndermek için GET kullanmayın! (gönderilen form verileri URL'de görünür!)
+    *Bir URL'nin uzunluğu sınırlıdır (2048 karakter)
+    *Bir kullanıcının sonuca yer işareti koymak istediği form gönderimleri için kullanışlıdır
+    *GET, Google'daki sorgu dizeleri gibi güvenli olmayan veriler için iyidir.
+    
+    *POST ile ilgili notlar:
+    *Form verilerini HTTP isteğinin gövdesine ekler (gönderilen form verileri URL'de gösterilmez)
+    *POST'un boyut sınırlaması yoktur ve büyük miktarda veri göndermek için kullanılabilir.
+    *POST ile gönderilen formlara yer imi eklenemez.
+    
+    İpucu: Form verileri hassas veya kişisel bilgiler içeriyorsa her zaman POST'u kullanın!
+    
+    
+    Öznitelik 'autocomplete', bir formun otomatik tamamlama özelliğinin açık mı yoksa kapalı mı olacağını belirtir.
+    Otomatik tamamlama açıkken tarayıcı, kullanıcının daha önce girdiği değerlere göre değerleri otomatik olarak tamamlar.
+    
+    Nitelik novalidatebir boolean niteliktir.
+    Mevcut olduğunda, form verilerinin (giriş) gönderildiğinde doğrulanmaması gerektiğini belirtir.
+    
+    <form action="/action_page.php" novalidate>
+    -->
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form><br>
+
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" value="John"><br><br>
+        <input type="submit" value="Submit">
+    </form><br>
+
+    <form action="/action_page.php" method="get">
+        <form action="/action_page.php" method="post"><br>
+
+            <form action="/action_page.php" autocomplete="on"><br>
+
+                <!-- Form Ögeleri -->
+
+                <!--
+    En çok kullanılan form elemanlarından biri elemandır '<input>'.
+    Öğe <input>, özniteliğe bağlı olarak birkaç şekilde görüntülenebilir type.
+    
+    Öğe <label>, çeşitli form öğeleri için bir etiket tanımlar.
+    
+    Öğe <select>, bir açılır liste tanımlar:
+
+    Öğeler <option>, seçilebilen bir seçeneği tanımlar.
+
+    'size' Görünür değerlerin sayısını belirtmek için niteliği kullanın :
+
+    'multiple' Kullanıcının birden fazla değer seçmesine izin vermek için özelliği kullanın :
+
+    Öğe, '<textarea>'çok satırlı bir giriş alanı (bir metin alanı) tanımlar:
+
+    Nitelik rows, bir metin alanındaki görünür satır sayısını belirtir.
+    Nitelik cols, bir metin alanının görünür genişliğini belirtir.
+    
+    Öğe <button> tıklanabilir bir düğme tanımlar:
+    
+    Öğe <fieldset>, ilgili verileri bir formda gruplandırmak için kullanılır.
+    Öğe , öğe <legend>için bir başlık tanımlar <fieldset>.
+    
+    Öğe <datalist>, bir öğe için önceden tanımlanmış seçeneklerin bir listesini belirtir <input>.
+    Kullanıcılar, veri girerken önceden tanımlanmış seçeneklerin açılır listesini görecektir.
+    listElemanın özniteliği, öğenin özniteliğine <input>atıfta bulunmalıdır.id<datalist>
+    
+    Öğe <output>, bir hesaplamanın sonucunu temsil eder (bir komut dosyası tarafından gerçekleştirilen gibi).    
+    -->
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br>
+
+                <label for="cars">Choose a car:</label>
+                <select id="cars" name="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                </select><br>
+
+                <option value="fiat" selected>Fiat</option><br>
+
+                <label for="cars">Choose a car:</label>
+                <select id="cars" name="cars" size="3">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                </select><br>
+
+                <label for="cars">Choose a car:</label>
+                <select id="cars" name="cars" size="4" multiple>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                </select><br>
+
+                <textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.
+</textarea><br>
+
+                <textarea name="message" style="width:200px; height:600px;">
+The cat was playing in the garden.
+</textarea><br>
+
+                <button type="button" onclick="alert('Hello World!')">Click Me!</button><br>
+
+                <form action="/action_page.php">
+                    <fieldset>
+                        <legend>Personalia:</legend>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" value="John"><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                </form><br>
+
+                <form action="/action_page.php">
+                    <input list="browsers">
+                    <datalist id="browsers">
+                        <option value="Internet Explorer">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                    </datalist>
+                </form><br>
+
+                <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                    0
+                    <input type="range" id="a" name="a" value="50">
+                    100 +
+                    <input type="number" id="b" name="b" value="50">
+                    =
+                    <output name="x" for="a b"></output>
+                    <br><br>
+                    <input type="submit">
+                </form><br>
+
+                <!-- Form Giriş Türleri -->
+
+                <!-- 
+                <input type="text"> tek satırlık bir metin giriş alanı tanımlar:
+                
+                <input type="password">bir şifre alanı tanımlar:
+
+                <input type="submit">form verilerini bir form işleyiciye göndermek için bir düğme tanımlar.
+                Form işleyici, genellikle girdi verilerini işlemek için bir komut dosyası içeren bir sunucu sayfasıdır.
+                Form işleyici, formun özniteliğinde belirtilir action:
+                
+                <input type="reset"> tüm form değerlerini varsayılan değerlerine sıfırlayacak bir sıfırlama düğmesi tanımlar:
+
+                <input type="radio">bir radyo düğmesi tanımlar .
+                Radyo düğmeleri, bir kullanıcının sınırlı sayıda seçenekten YALNIZCA BİRİNİ seçmesine izin verir:
+                
+                <input type="checkbox">bir onay kutusu tanımlar .
+                Onay kutuları, bir kullanıcının sınırlı sayıda seçenek arasından SIFIR veya DAHA FAZLA seçeneği seçmesine izin verir.
+                
+                <input type="button">bir düğme tanımlar :
+                
+                <input type="color">Renk içermesi gereken giriş alanları için kullanılır .
+                Tarayıcı desteğine bağlı olarak, giriş alanında bir renk seçici görüntülenebilir.
+                
+                <input type="date">Tarih içermesi gereken giriş alanları için kullanılır .
+                Tarayıcı desteğine bağlı olarak, giriş alanında bir tarih seçici görüntülenebilir.
+                
+                Tarihlere kısıtlamalar eklemek için minve niteliklerini de kullanabilirsiniz :max
+
+                <input type="datetime-local">Saat dilimi olmayan bir tarih ve saat giriş alanı belirtir .
+                Tarayıcı desteğine bağlı olarak, giriş alanında bir tarih seçici görüntülenebilir.
+                
+                <input type="email">Bir e-posta adresi içermesi gereken giriş alanları için kullanılır .
+                Tarayıcı desteğine bağlı olarak, e-posta adresi gönderildiğinde otomatik olarak doğrulanabilir.
+                Bazı akıllı telefonlar e-posta türünü tanır ve e-posta girişini eşleştirmek için klavyeye ".com" ekler.
+                
+                <input type="image"> Bir görüntüyü gönder düğmesi olarak tanımlar .
+                Resmin yolu, öznitelikte belirtilir src.
+                
+                <input type="file"> Dosya yüklemeleri için bir dosya seçme alanı ve bir "Gözat" düğmesi tanımlar .
+
+                Gizli bir giriş alanı tanımlar <input type="hidden"> (bir kullanıcı tarafından görülemez).
+                Gizli bir alan, web geliştiricilerinin, bir form gönderildiğinde kullanıcılar tarafından görülemeyen veya değiştirilemeyen verileri dahil etmesine olanak tanır.
+                Gizli bir alan genellikle form gönderildiğinde güncellenmesi gereken veritabanı kaydını saklar.
+                Not: Değer, sayfa içeriğinde kullanıcıya gösterilmezken, herhangi bir tarayıcının geliştirici araçları veya "Kaynağı Görüntüle" işlevi kullanılarak görülebilir (ve düzenlenebilir). Gizli girişleri bir güvenlik biçimi olarak kullanmayın!
+                
+                <input type="month">Kullanıcının bir ay ve yıl seçmesine izin verir .
+                Tarayıcı desteğine bağlı olarak, giriş alanında bir tarih seçici görüntülenebilir.
+                
+                sayısal<input type="number"> bir giriş alanı tanımlar .
+                Hangi numaraların kabul edileceğine ilişkin kısıtlamalar da belirleyebilirsiniz.
+                Aşağıdaki örnek, 1 ile 5 arasında bir değer girebileceğiniz bir sayısal giriş alanı görüntüler:
+                
+                <input type="range">Tam değeri önemli olmayan bir sayı girmek için bir kontrol tanımlar (kaydırmalı kontrol gibi).
+                 minVarsayılan aralık 0 ila 100'dür. Ancak , max, ve öznitelikleriyle hangi sayıların kabul edileceğine ilişkin kısıtlamalar belirleyebilirsiniz step:
+                 
+                <input type="search">Arama alanları için kullanılır (bir arama alanı, normal bir metin alanı gibi davranır) .
+
+                <input type="tel">Telefon numarası içermesi gereken giriş alanları için kullanılır .
+
+                <input type="time">Kullanıcının bir saat seçmesine izin verir (saat dilimi yok) .
+                Tarayıcı desteğine bağlı olarak, giriş alanında bir zaman seçici görünebilir.
+                
+                <input type="url">Bir URL adresi içermesi gereken giriş alanları için kullanılır .
+                Tarayıcı desteğine bağlı olarak, url alanı gönderildiğinde otomatik olarak doğrulanabilir.
+                Bazı akıllı telefonlar url türünü tanır ve url girişini eşleştirmek için klavyeye ".com" ekler.
+                
+                <input type="week">Kullanıcının bir hafta ve yıl seçmesine izin verir .
+                Tarayıcı desteğine bağlı olarak, giriş alanında bir tarih seçici görüntülenebilir.
+                -->
+
+                <form>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname">
+                </form><br>
+
+                <form>
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username"><br>
+                    <label for="pwd">Password:</label><br>
+                    <input type="password" id="pwd" name="pwd">
+                </form><br>
+
+                <form action="/action_page.php">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                    <input type="submit" value="Submit">
+                </form><br>
+
+                <form action="/action_page.php">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                    <input type="submit">
+                </form><br>
+
+                <form action="/action_page.php">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                    <input type="submit" value="Submit">
+                    <input type="reset">
+                </form><br>
+
+                <p>Choose your favorite Web language:</p>
+
+                <form>
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">HTML</label><br>
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                    <label for="css">CSS</label><br>
+                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                    <label for="javascript">JavaScript</label>
+                </form><br>
+
+                <form>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> I have a bike</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> I have a car</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> I have a boat</label>
+                </form><br>
+
+                <input type="button" onclick="alert('Hello World!')" value="Click Me!"><br>
+
+                <form>
+                    <label for="favcolor">Select your favorite color:</label>
+                    <input type="color" id="favcolor" name="favcolor">
+                </form><br>
+
+                <form>
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" name="birthday">
+                </form><br>
+
+                <form>
+                    <label for="datemax">Enter a date before 1980-01-01:</label>
+                    <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+                    <label for="datemin">Enter a date after 2000-01-01:</label>
+                    <input type="date" id="datemin" name="datemin" min="2000-01-02">
+                </form><br>
+
+                <form>
+                    <label for="birthdaytime">Birthday (date and time):</label>
+                    <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+                </form><br>
+
+                <form>
+                    <label for="email">Enter your email:</label>
+                    <input type="email" id="email" name="email">
+                </form><br>
+
+                <form>
+                    <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+                </form><br>
+
+                <form>
+                    <label for="myfile">Select a file:</label>
+                    <input type="file" id="myfile" name="myfile">
+                </form><br>
+
+                <form>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <input type="hidden" id="custId" name="custId" value="3487">
+                    <input type="submit" value="Submit">
+                </form><br>
+
+                <form>
+                    <label for="bdaymonth">Birthday (month and year):</label>
+                    <input type="month" id="bdaymonth" name="bdaymonth">
+                </form><br>
+
+                <form>
+                    <label for="quantity">Quantity (between 1 and 5):</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="5">
+                </form><br>
+
+                <form>
+                    <label for="vol">Volume (between 0 and 50):</label>
+                    <input type="range" id="vol" name="vol" min="0" max="50">
+                </form><br>
+
+                <form>
+                    <label for="gsearch">Search Google:</label>
+                    <input type="search" id="gsearch" name="gsearch">
+                </form><br>
+
+                <form>
+                    <label for="phone">Enter your phone number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                </form><br>
+
+                <form>
+                    <label for="appt">Select a time:</label>
+                    <input type="time" id="appt" name="appt">
+                </form><br>
+
+                <form>
+                    <label for="homepage">Add your homepage:</label>
+                    <input type="url" id="homepage" name="homepage">
+                </form><br>
+
+                <form>
+                    <label for="week">Select a week:</label>
+                    <input type="week" id="week" name="week">
+                </form>
+</body>
+
+</html>
