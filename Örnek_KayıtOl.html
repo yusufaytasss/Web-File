@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol!</title>
+</head>
+<body>
+
+    <h2>Kayıt Ol!</h2>
+    <hr>
+
+    <fieldset>
+        <legend>Kayıt !</legend>
+        <label for="isim">Adınız :</label><br>
+        <input type="text"><br>
+
+        <label for="soyisim">Soy Adınız :</label><br>
+        <input type="text"><br>
+
+        <label for="şifre">Şifreniz :</label><br>
+        <input type="password"><br>
+
+        <label for="KendiniAnlat">Kendini Anlat :</label>
+        <form name="form">
+        <textarea cols="30" rows="3"></textarea><br>
+
+        <b>En Sevdiğin Programlama Dili Nedir?</b><br>
+        <form>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </form><br>
+
+        <b>En Sevdiğin Programlama Dili Nedir?</b><br>
+        <form>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="HTML">
+            <label for="vehicle1"> HTML </label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="CSS">
+            <label for="vehicle2"> CSS</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="JavaScript">
+            <label for="vehicle3"> JavaScript</label>
+        </form><br>
+
+        <label for="şehirler">Şehirler:</label>
+            <select>
+                <option>İstanbul</option>
+                <option>Ankara</option>
+                <option>Eskişehir</option>
+                <option>İzmir</option>
+                <option>Kocaeli</option>
+                <option>Malatya</option>
+                <option>Elazığ</option>
+            </select><br><br>
+        
+        <form>
+            <label for="email">E-mail :</label><br>
+            <input type="email">
+        </form><br>
+
+        <form>
+            <label for="DoğumGünü">Doğum Günü :</label>
+            <input type="date">
+        </form><br>
+
+        <input type="submit" onclick="window.location.href ='KayıtOl.html';" value="Kaydet !">
+        <input type="submit" onclick="window.location.href ='KayıtOl.html';" value="Temizle !">
+        
+    </fieldset>
+</body>
+</html>
